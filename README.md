@@ -2,7 +2,7 @@
 <h1>What are APIs?<h1>
 </div>
 
-<h2>Application Programming Interfaces</h2>
+<h1 align="center">Application Programming Interfaces</h1>
 
 <p>An <b>Application Programming Interface (API)</b> is a <u>contract that allows code to talk to other code</u>. APIs are the building blocks of modern software because they allow for sharing of resources and services across applications, organizations, and devices.</p>
 
@@ -44,7 +44,7 @@
 
 <br><br>
 
-<h1>APIs - A Digital Restaurant</h1>
+<h1 align="center">APIs - A Digital Restaurant</h1>
 <p>You can think of APIs as being like a waiter at a restaurant, serving as a go-between for the customer and the kitchen. </p>
 
 <div align="center">
