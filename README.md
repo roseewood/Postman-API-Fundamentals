@@ -42,4 +42,40 @@
 <h2>Who benefits from APIs?</h2>
 <p>Ultimately, <b>everyone benefits from APIs</b> either directly or indirectly because APIs make processes more efficient and connect the services we love and rely on.</p>
 
+<br><br>
+
+<h1>APIs - A Digital Restaurant</h1>
+<p>You can think of APIs as being like a waiter at a restaurant, serving as a go-between for the customer and the kitchen. </p>
+
+<div align="center">
+<img src="Images/digital restaurant.png" width="500px" height="350px">
+</div>
+
+<p>A customer who wants soup doesn't go into the kitchen to cook. They don't even have to know how to make soup! They only have to know <i>how to ask the waiter for soup, expecting the waiter to bring back soup</i>.</p>
+<br>
+<p>APIs work the same way, but there are different names for the players involved. Instead of soup, the requester might ask for data or execution of a service.  </p>
+
+<table>
+<tr>
+<th>Networking term</th>
+<th>Description</th>
+<th>Restaurant analogy</th>
+</tr>
+<tr>
+<td>Client</td>
+<td><i>The requester. Ex: browser, web app, mobile app</i></td>
+<td>Customer</td>
+<tr>
+<tr>
+<td>API</td>
+<td><i>Simplified interface for interacting with the backend</i></td>
+<td>Waiter</td>
+</tr>
+<tr>
+<td>Server</td>
+<td><i>The backend where the processing happens</i></td>
+<td>Kitchen</td>
+<tr>
+</table>
+
 
