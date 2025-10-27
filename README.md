@@ -78,4 +78,66 @@
 <tr>
 </table>
 
+<br><br>
+
+<h1 align="center">Types of APIs</h1>
+
+<h2>Medium</h2>
+<p>While this course will focus on Web APIs, it is important to know that "API" can apply to a broad range of interfaces.</p>
+
+<ul>
+<li><b>Hardware APIs</b></li>
+<p>Interface for software to talk to hardware.<br><i>Example: How your phone's camera talks to the operating system. </i></p>
+
+<br>
+
+<li><b>Software Library APIs</b></li>
+<p>Interface for directly consuming code from another code base.<br><i>Example: Using methods from a library you import into your application.</i></p>
+
+<br>
+<li><b>Web APIs</b></li>
+<p>Interface for communicating across code bases over a network.<br><i>Example: Fetching current stock prices from a finance API over the internet.</i></p>
+</ul>
+
+
+<p>Multiple API types may be used to achieve a task. For example, uploading a photo to Instagram makes use of various APIs:</p>
+
+<br>
+
+<ol>
+<li><u>Hardware API</u> for the app to talk to your camera</li><br>
+<li><u>Software library API</u> for the image to be processed with filters</li><br>
+<li><u>Web API</u> for sending your image to Instagram's servers so your friends can like it!</li>
+</ol><br>
+
+<h2>Architectures</h2>
+
+<div align="center">
+<img src="Images/architectures.png" width="500px" height="">
+<p>There is more than one way to build and consume APIs. Some architecture types you may come across are:</p>
+</div>
+
+<ul>
+<li>REST (Representational State Transfer)</li>
+<li>GraphQL</li>
+<li>WebSockets</li>
+<li>webhooks</li>
+<li>SOAP (Simple Object Access Protocol)</li>
+<li>gRPC (Google Remote Procedure Call)</li>
+<li>MQTT (MQ Telemetry Transport)</li>
+</ul>
+
+<h4>Rest APIs</h4>
+<p>Some traits of REST APIs include not storing session state between requests, the ability to cache, and the ability to send and receive various data types. Still confused? Don't worry; we will learn hands-on very soon in this course!</p>
+
+<h2>Access</h2>
+<p>APIs also vary in the scope of who can access them.</p>
+
+<ol>
+<li><b>Public APIs (aka Open APIs)</b><br>Consumed by anyone who discovers the API
+</li>
+<li><b>Private APIs</b><br>Consumed only within an organization and not made public</li>
+<li><b>Partner APIs</b><br>Consumed between one or more organizations that have an established relationship</li>
+</ol>
+
 
