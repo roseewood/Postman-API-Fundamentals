@@ -1,0 +1,19 @@
+-What are APIs?
+
+Q-1. What is an API? Pick the best answer from one of the choices below.
+
+i) A file format for images
+ii)  Apple's new iPhone programming language
+iii) A contract that allows code to talk to other code.
+iv) A unit used for storage measurement
+
+[The correct option is (iii)]
+
+Q-2. What are some different types of APIs?
+
+i) REST APIs
+ii) GraphQL
+iii) gRPC
+iv) ElectricSockets
+
+[The correct options are (i), (ii) and (iii)]
