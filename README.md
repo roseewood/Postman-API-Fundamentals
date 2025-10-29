@@ -1,7 +1,6 @@
 <div align="center">
 <h1>What are APIs?<h1>
 </div>
-<hr><br>
 
 <h1 align="center">Application Programming Interfaces</h1>
 
