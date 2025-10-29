@@ -140,4 +140,45 @@
 <li><b>Partner APIs</b><br>Consumed between one or more organizations that have an established relationship</li>
 </ol>
 
+<br>
+
+<div align="center">
+<h1 align="center">Introducing Postman</h1>
+</div>
+
+<hr><br><br>
+
+<h1 align="center">An API Platform</h1>
+<p><a href="https://www.postman.com/company/about-postman/" target="_blank">Postman</a> is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs faster and consume them with ease. That's why Postman is trusted by over <b>25 million users</b> worldwide!</p><br><br>
+
+<div align="center">
+<img src="Images/api-lifecycle.png" width="" height="">
+</div>
+
+<h2>Working with APIs then and now: cURL vs. Postman</h2>
+
+<p>Before Postman, it was common practice to poke at APIs with a command line tool for making HTTP requests called <a href="https://en.wikipedia.org/wiki/CURL" target="_blank">cURL</a>. This tool is still used today but has its limitations when it comes to collaboration and sharing. </p>
+
+<p><b>API calls with <code>curl</code></b></p>
+
+<p>This is an example of what an API call in the terminal using the <code>curl</code> command looks like. Here we are fetching data about <a href="https://github.com/" target="_blank">GitHub</a> user <a href="https://github.com/postmanlabs" target="_blank">postmanlabs</a></p><br>
+
+<code>curl https://api.github.com/users/postmanlabs</code>
+
+<div>
+<img src="Images/curl-api-call.png" alt="api calls with curls">
+</div><br>
+
+<p>
+It works great, but once you make the call, the API response data is lost in the river of the terminal. You also don't have visibility of the metadata of the response without adding more details to the command.</p><br>
+
+<p><b>API calls with Postman</b></p>
+<p>Here is the same call done with Postman. Postman shows the response with clean indents and colors and allows you to save, organize and share your requests. You can also see all the components of the request and response broken down into tabs and other helpful details like the response time and status code. </p><br>
+
+<div>
+<img src="Images/postman-api-call.png" alt="Api calls with postman">
+</div><br>
+
+
+
 
