@@ -1,6 +1,7 @@
 <div align="center">
 <h1>What are APIs?<h1>
 </div>
+<hr><br>
 
 <h1 align="center">Application Programming Interfaces</h1>
 
@@ -143,10 +144,10 @@
 <br>
 
 <div align="center">
-<h1 align="center">Introducing Postman</h1>
+<h1>Introducing Postman</h1>
 </div>
 
-<hr><br><br>
+<hr><br>
 
 <h1 align="center">An API Platform</h1>
 <p><a href="https://www.postman.com/company/about-postman/" target="_blank">Postman</a> is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs faster and consume them with ease. That's why Postman is trusted by over <b>25 million users</b> worldwide!</p><br><br>
