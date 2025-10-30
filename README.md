@@ -179,6 +179,22 @@ It works great, but once you make the call, the API response data is lost in the
 <img src="Images/postman-api-call.png" alt="Api calls with postman">
 </div><br>
 
+<h1 align="center">The API First World</h1>
+<p>Postman has a <a href="https://blog.postman.com/celebrating-20-million-postman-users/" target="_blank">vision for an API First World</a> - one where 100 million developers are connected through APIs, and APIs take center stage as primary building blocks. In the API-first world:</p><br>
+
+<ul>
+<li><b>APIs are considered a #1 priority</b></li>
+<li><b>APIs are easily consumable</b></li>
+<li><b>APIs are easily discoverable</b></li>
+
+</ul>
+
+<p></p>
+
+<h3><a href="https://api-first-world.com/" target="_blank">The API-First World </a></h3>
+
+<div><img src="Images/api-firstworld.png" alt"novel"></div><br>
+
 
 
 
