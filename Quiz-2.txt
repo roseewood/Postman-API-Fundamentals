@@ -1,0 +1,11 @@
+-Introducing Postman
+
+Q-1. Postman has a vision for an API-First World. In the API-first world:
+
+i) APIs are considered a #1 priority
+ii) APIs will make you famous on TikTok
+iii)  APIs are easily consumable
+iv)  API stands for Application Postman Interfac
+v) APIs are easily discoverable
+
+[The correct options are (i), (iii) and (v)]
