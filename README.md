@@ -193,7 +193,51 @@ It works great, but once you make the call, the API response data is lost in the
 
 <h3><a href="https://api-first-world.com/" target="_blank">The API-First World </a></h3>
 
-<div><img src="Images/api-firstworld.png" alt"novel"></div><br>
+<div><img src="Images/api-firstworld.png" alt"novel"></div><br><br>
+
+<div align="center">
+<h1>Your First API Request</h1>
+</div>
+
+<hr><br>
+
+<h1 align="center">Task: Create a workspace</h1>
+
+<p>Are you ready to become a digital librarian using the <b>Postman Library API v2?</b></p>
+
+<p>This REST API allows you to <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank">CRUD</a> (<b>C</b>reate, <b>R</b>ead, <b>U</b>pdate, <b>D</b>elete) books in a public library database. You will use Postman to interact with this API and manage books.</p>
+
+<h2>Open Postman for web</h2>
+
+<p>Postman can be Used as a desktop app or web browser. This course will show you how to use It in the browser. </p>
+
+<ol>
+<li>Navigate to <a href="https://www.postman.com/" target="_blank">https://www.postman.com/</a></li><br>
+<li>Sign in if you have an account, or <a href="https://identity.getpostman.com/signup?authFlowId=13a2b251-452f-42b8-8aec-893e6c8cdaf6" target="_blank">sign</a> up for free! </li>
+</ol>
+
+<h2>Create a Workspace</h2>
+<p>To start making Postman requests, you need to be inside a workspace. Let's make one! </p><br>
+<p>1. <b>Workspaces</b> dropdown > <b>Create Workspace</b></p><br>
+<div>
+<img src="Images/create workspace.png" alt="" width="600px">
+</div><br>
+
+<p>2. Select Blank Workspace as Template and Name your workspace "<b>Postman API Fundamentals Student Expert</b>"</p><br>
+<div>
+<img src="Images/choose blank workspace.png" alt="" width="800px">
+</div><br>
+
+><b>Info:</b> While working with your personal APIs, you can choose from a template listed, which can set you up with some pre-defined structure or use a blank workspace. For our course we will use a blank workspace.<br>
+
+<p>3. Set the visibility to <b>Everyone from team</b>. Then click "<b>Create Workspace.</b>"</p><br>
+<div>
+<img src="Images/name-permission.png" alt="" width="800px" >
+</div><br>
+
+<h3>Success!</h3>
+<p>Welcome to your empty new workspace.</p><br>                                                                                              
+
 
 
 
