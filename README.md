@@ -236,7 +236,34 @@ It works great, but once you make the call, the API response data is lost in the
 </div><br>
 
 <h3>Success!</h3>
-<p>Welcome to your empty new workspace.</p><br>                                                                                              
+<p>Welcome to your empty new workspace.</p><br>                                                               
+
+<h1 align="center">Task: Create a Collection</h1>
+
+<p><a href="" target="_blank">Collections</a> are places to organize your API requests in Postman. They serve as executable documentation of API endpoints. 
+</p><br>
+
+<p>Let's create a new Collection in our workspace to keep our requests to the <b>Postman Library API v2.</b></p><br>
+
+
+<div>
+<p>1. From the left pane, either click the plus ("+") icon or Create a collection. </p><br>
+<img src="Images/create collection.png" alt="" width="" height="500px">
+</div><br>
+
+<div>
+<p>2. Select Blank collection</p><br>
+<img src="Images/select blank collection.png" alt="" width="500px" height="">
+</div><br>
+
+<div>
+<p>3. Name your new Collection “<b>Postman Library API v2</b>”</p><br>
+<img src="Images/name new collection.png" alt="" width="500px" height="">
+</div><br>
+
+>Let's Go🚀!
+
+
 
 
 
