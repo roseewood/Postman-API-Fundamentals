@@ -265,7 +265,7 @@ It works great, but once you make the call, the API response data is lost in the
 
 <br>
 
-<h2>Task: Get books from the Library API</h2>
+<h1 align="center">Task: Get books from the Library API</h1>
 
 <p>First things first: a librarian must know how to view all the books in the library catalog.</p>
 
