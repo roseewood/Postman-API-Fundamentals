@@ -274,7 +274,7 @@ It works great, but once you make the call, the API response data is lost in the
 <h2>Make your first request.</h2>
 
 <p>1. Create a new request by either clicking <b> Add a request</b> inside your new Collection or hovering on your Collection, then click the three dots icon and "Add request" </p><br>
-<img src="Images/Add a request.png" width="500px" height="" alt=""><br><br>
+<img src="Images/Add a request.png" width="500px" height="" alt=""><br>
 
 <p>2. Name your request "<b>get books</b>". Set the request method to <b>GET</b>, and the <b>request URL</b> to GET <code>https://library-api.postmanlabs.com/books</code></p><br>
 <img src="Images/name get books.png" widht="500px" height="" alt=""><br>
