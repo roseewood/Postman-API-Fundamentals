@@ -284,9 +284,14 @@ It works great, but once you make the call, the API response data is lost in the
 <h2>View the response</h2>
 <p>If everything goes well, you will see a response from the server in the lower half of Postman.</p>
 <p>It should look like this: a JSON (JavaScript Object Notation) response body with an <b>array</b> of book <b>objects</b>. You can scroll down to see more books.</p>
+<img src="Images/viewresponse.png" widht="500px" height="" alt=""><br>
 
+<p>You might see different books because this public library is being modified in real-time by other Postman librarians worldwide!</p>
 
-
+<h2>Request methods</h2>
+<p>When we make an HTTP call to a server, we specify a request method that indicates the type of operation we are about to perform. These are also called HTTP verbs.</p>
+<p>Some common HTTP request methods correspond to the CRUD operations mentioned earlier. You can see a list of more methods here.</p><br>
+<table></table>
 
 
 
