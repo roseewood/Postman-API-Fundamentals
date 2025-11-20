@@ -277,7 +277,7 @@ It works great, but once you make the call, the API response data is lost in the
 <img src="Images/Add a request.png" width="500px" height="" alt=""><br>
 
 <p>2. Name your request "<b>get books</b>". Set the request method to <b>GET</b>, and the <b>request URL</b> to GET <code>https://library-api.postmanlabs.com/books</code></p><br>
-<img src="Images/name get books.png" widht="500px" height="" alt=""><br>
+<img src="Images/name get books.png" widht="500px" height="" alt="">
 
 <p>3. Send your request by clicking the Send button</p>
 
