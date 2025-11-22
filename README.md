@@ -328,5 +328,21 @@ These are just conventions - it all depends on how the API is coded. To know whi
 
 <p>Refer to the API Documentation here: <a href="https://documenter.getpostman.com/view/15567703/UVyxRtng#a2f33f71-de38-42fb-97fe-dccac7516e73" target="_blank">Postman Library API v2 docs</a> </p>
 
+<h2>Request URL</h2>
 
+<p>In addition to a request method, a request must include a <b>request</b> URL that indicates where to make the API call. A request URL has three parts: a <b>protocol</b> (such as <code>http://</code> or <code>https://</code>), <b>host</b> (location of the server), and <b>path</b> (route on the server). In REST APIs, the path often points to a reference entity, like "books".</p>
+
+<table>
+<tr>
+<th>Protocol</th>
+<th>Host</th>
+<th>Path</th>
+</tr>
+<tr>
+<td><code> https://</code></td>
+<td><code> library-api.postmanlabs.com</code></td>
+<td><code> /books</code></td>
+</tr>
+</table>
+<p>Paths and complete URLs are also sometimes called <b>API endpoints</b>.</p>
 
