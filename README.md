@@ -291,7 +291,35 @@ It works great, but once you make the call, the API response data is lost in the
 <h2>Request methods</h2>
 <p>When we make an HTTP call to a server, we specify a request method that indicates the type of operation we are about to perform. These are also called HTTP verbs.</p>
 <p>Some common HTTP request methods correspond to the CRUD operations mentioned earlier. You can see a list of more methods here.</p><br>
-<table></table>
+
+<table>
+<tr>
+<th>Method Name</th>
+<th>Operation</th>
+
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td>Retrieve data (Read)</td>
+
+<tr>
+<tr>
+<td><code>POST</code></td>
+<td>Send data (Create)</td>
+
+</tr>
+<tr>
+<td><code>PUT/PATCH</code></td>
+<td>Update data (Update)
+<p>* <code>PUT</code> usually replaces an entire resource, whereas <code>PATCH</code> usually is for partial updates</p>
+</td>
+
+<tr>
+
+<tr>
+<td><code>DELETE</code></td>
+<td>Delete data (Delete)</td>
+</table>
 
 
 
