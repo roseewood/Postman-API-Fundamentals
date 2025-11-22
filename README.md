@@ -391,6 +391,11 @@ These are just conventions - it all depends on how the API is coded. To know whi
 
 </table><br>
 
+<p>In Postman, you can hover over any response code to see what it means. 
+</p>
+
+<img src="Images/200OK.png" width="350px" alt="status code">
+
 
 
 
