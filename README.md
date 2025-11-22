@@ -346,3 +346,53 @@ These are just conventions - it all depends on how the API is coded. To know whi
 </table>
 <p>Paths and complete URLs are also sometimes called <b>API endpoints</b>.</p>
 
+<h2>Response status codes</h2>
+<p>The Postman Library API v2 has returned a <a href="" target="_blank">response status code</a> of "<b>200 OK</b>". Status codes are indicators of whether a request failed or succeeded.</p>
+
+<p>Status codes have conventions. For example, any status code starting with a "2xx" (a "200-level response") represents a successful call. Get familiar with other status code categories:</p>
+
+<table>
+<tr>
+<th>Code Range</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+<tr>
+<td><code>2xx</code></td>
+<td>Success</td>
+<td><p><code>200</code> - OK</p>
+<p><code>201</code> - Created</p>
+<p><code>204</code> - No content (silent OK)</p>
+</td>
+</tr>
+<tr>
+<td><code>3xx</code></td>
+<td>Redirection</td>
+<td><p><code>301</code> - Moved (path changed)</p>
+</td>
+</tr>
+<tr>
+<td><code>4xx</code></td>
+<td>Client error</td>
+<td><p><code>400</code> - Bad request</p>
+<p><code>401</code> -Unauthorized</p>
+<p><code>403</code> - Not Permitted</p>
+<p><code>404</code> - Not Found</p>
+</td>
+</tr>
+<tr>
+<td><code>5xx</code></td>
+<td>Server error</td>
+<td><p><code>500</code> - Intenal server error</p>
+<p><code>502</code> - Bad gateway</p>
+<p><code>504</code> - Gareway timeout</p>
+</td>
+</tr>
+
+</table><br>
+
+
+
+
+
+
