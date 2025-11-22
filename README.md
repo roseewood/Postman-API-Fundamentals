@@ -290,7 +290,7 @@ It works great, but once you make the call, the API response data is lost in the
 
 <h2>Request methods</h2>
 <p>When we make an HTTP call to a server, we specify a request method that indicates the type of operation we are about to perform. These are also called HTTP verbs.</p>
-<p>Some common HTTP request methods correspond to the CRUD operations mentioned earlier. You can see a list of more methods here.</p><br>
+<p>Some common HTTP request methods correspond to the CRUD operations mentioned earlier. You can see a list of more methods <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods" targer="_blank">here</a>.</p><br>
 
 <table>
 <tr>
@@ -319,7 +319,14 @@ It works great, but once you make the call, the API response data is lost in the
 <tr>
 <td><code>DELETE</code></td>
 <td>Delete data (Delete)</td>
-</table>
+</table><br>
+
+<p>Since we are "getting" books and not modifying any data, it makes sense that we are making a <codeGET</code> request. </p>
+
+<p>
+These are just conventions - it all depends on how the API is coded. To know which method to use, always read the documentation for the API you're working with!</p>
+
+<p>Refer to the API Documentation here: <a href="https://documenter.getpostman.com/view/15567703/UVyxRtng#a2f33f71-de38-42fb-97fe-dccac7516e73" target="_blank">Postman Library API v2 docs</a> </p>
 
 
 
