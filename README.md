@@ -408,6 +408,26 @@ These are just conventions - it all depends on how the API is coded. To know whi
 
 <p>The server interpreted the request <code>(GET /books)</code> and sent the appropriate <b>response</b> over the network back to the Postman client: a list of books.</p>
 
+<div align="center">
+<h1>Request Parameter</h1>
+</div>
+<hr><br>
+
+<h1 align="center">Variables in Postman</h1>
+<p>Postman allows you to save values as <b>variables</b> to reuse them and easily hide sensitive information like API Keys.</p>
+
+<p>We will use a variable to replace our base URL so that we don't have to type that repeatedly. Once a variable is defined, you can access its value using double curly brace syntax like this: <code>{{variableName}}</code></p>
+
+<p><b>Set the "baseUrl" variable</b></p>
+<p>In Postman, you can quickly create a variable by selecting text. Below the video is a step-by-step breakdown of how to set your variable.</p>
+
+<p>1. Go to the "get books" request in your collection.</p>
+
+<p>2. With your cursor, select the entire base URL of the API <code>(https://library-api.postmanlabs.com)</code>. <b>Do not include the slash <code>/</code> after <code>.com</b></code>.</p>
+
+<p>
+Click "<b>Set as variable</b>" to save the base URL to a variable.</p>
+
 
 
 
