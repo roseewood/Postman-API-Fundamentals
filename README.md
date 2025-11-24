@@ -425,11 +425,33 @@ These are just conventions - it all depends on how the API is coded. To know whi
 
 <p>2. With your cursor, select the entire base URL of the API <code>(https://library-api.postmanlabs.com)</code>. <b>Do not include the slash <code>/</code> after <code>.com</b></code>.</p>
 
-<p>
-Click "<b>Set as variable</b>" to save the base URL to a variable.</p>
+<p>Click "<b>Set as variable</b>" to save the base URL to a variable.</p>
+<img src="" width="">
 
+<p>3. Click "Set as a new variable".</p>
+<img src="" width="">
 
+<p>4. Name your new variable <b>"baseUrl"</b> and select <b>"Collection"</b> as the scope, then click <b>Set variable</b>.</p>
+<img src="" width="">
 
+> We will learn more about variables and scopes in the upcoming lesson, at this time we are creating a variable to make our life easier by not typing the long URL again and again!
 
+<p>Now that the variable is set, you can access the value anywhere in your collection by typing <code>{{baseUrl}}</code></p>
+
+<p>Hover over <code>{{baseUrl}}</code>. You will see its current value is set to <code>https://library-api.postmanlabs.com</code></p>
+
+<p>Please save and send the request; it will work exactly like before! You should get a status <code>200 OK</code> response with a list of books.</p><br>
+
+<h2>Where are my Variables?</h2>
+
+<p>You can find Collection variables in your collection.</p>
+<p>Click on your collection, then the Variables tab. Here you can view and edit your variables.</p>
+<img src="" width="">
+
+<p>Note that there are two columns:</p>
+<p><b>Initial Value </b> - the value initially set when someone forks or imports your collection. Note that if you share your collection with others, they will see this value, so <u>don't put any secrets here!</u></p>
+<p><b>Current Value</b> - Postman always resolves the variable to this value. This is local to your Postman account, and not public. It is good to keep secrets like API Keys ONLY in this column and not include them in the Initial Value column.
+
+ </p>
 
 
