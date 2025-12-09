@@ -426,13 +426,13 @@ These are just conventions - it all depends on how the API is coded. To know whi
 <p>2. With your cursor, select the entire base URL of the API <code>(https://library-api.postmanlabs.com)</code>. <b>Do not include the slash <code>/</code> after <code>.com</b></code>.</p>
 
 <p>Click "<b>Set as variable</b>" to save the base URL to a variable.</p>
-<img src="" width="">
+<img src="Images/Set as Variable.png" width="350px">
 
 <p>3. Click "Set as a new variable".</p>
-<img src="" width="">
+<img src="Images/Set as new Variable.png" width="350px">
 
 <p>4. Name your new variable <b>"baseUrl"</b> and select <b>"Collection"</b> as the scope, then click <b>Set variable</b>.</p>
-<img src="" width="">
+<img src="Images/baseUrlCollection.png" width="350px">
 
 > We will learn more about variables and scopes in the upcoming lesson, at this time we are creating a variable to make our life easier by not typing the long URL again and again!
 
@@ -446,7 +446,7 @@ These are just conventions - it all depends on how the API is coded. To know whi
 
 <p>You can find Collection variables in your collection.</p>
 <p>Click on your collection, then the Variables tab. Here you can view and edit your variables.</p>
-<img src="" width="">
+<img src="Images/variables.png" width="800px">
 
 <p>Note that there are two columns:</p>
 <p><b>Initial Value </b> - the value initially set when someone forks or imports your collection. Note that if you share your collection with others, they will see this value, so <u>don't put any secrets here!</u></p>
