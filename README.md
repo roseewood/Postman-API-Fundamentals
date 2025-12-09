@@ -452,6 +452,46 @@ These are just conventions - it all depends on how the API is coded. To know whi
 <p><b>Initial Value </b> - the value initially set when someone forks or imports your collection. Note that if you share your collection with others, they will see this value, so <u>don't put any secrets here!</u></p>
 <p><b>Current Value</b> - Postman always resolves the variable to this value. This is local to your Postman account, and not public. It is good to keep secrets like API Keys ONLY in this column and not include them in the Initial Value column.
 
- </p>
+ </p><br>
 
+<h1 align="center">Query parameters</h1>
 
+<p>Remember that the minimum ingredients you need to make a request are:</p>
+<ul>
+<li>a request method (<code>GET</code>/<code>POST</code>/<code>PUT</code>/<code>PATCH</code>/<code>DELETE</code>, etc)</li>
+<li>a request URL</li>
+</ul>
+
+<p>Some APIs allow you to refine your request further with key-value pairs called <b>query parameters.</b></p>
+
+<h2>Query parameter syntax</h2>
+
+<p>Query parameters are added to the end of the path. They start with a question mark <code>?</code>, followed by the <code>key-value</code> pairs in the format: <key>=<value>. For example, this request might fetch all photos that have landscape orientation:<p>
+
+<p><code>GET https://some-api.com/photos?orientation=landscape</code></p>
+
+<p>If there are multiple query parameters, each is separated by an ampersand <code>&</code>. Below two query parameters to specify the orientation and size of the photos to be returned:</p>
+
+<p><code>GET https://some-api.com/photos?orientation=landscape&size=500x400</code></p>
+
+<h2>Search Google - with query parameters!</h2>
+
+<p>Try pasting this URL into your browser or as a GET request in Postman to make a Google search for "Postman". <i>(If you use Postman, click the "Preview" tab in the response to view the rendered HTML!)</i></p>
+
+<p><code>https://www.google.com/search?q=postman</code></p>
+
+<p>This request adds a search term as a query parameter <code>q=postman</code> ("q" refers to "query" here) to the <code>GET /search</code> path on Google's server.</p>
+
+<p>Because this parameter is in our request, the server returns an HTML document that is a search results page with hits for "Postman". The search bar is pre-populated with our query "Postman".</p>
+
+<img src="Images/PostmanOnGoogle.png" width="300px">
+
+<p>You can change your search directly from the URL by changing the value for the query parameter  <code>q=&lt;something else!&gt;</code>
+</p>
+
+<h2>When to use query parameters?</h2>
+
+<p>The answer is always: read the API documentation!</p>
+<p>Sometimes, query parameters are optional and allow you to add filters or extra data to your responses. Sometimes, they are required in order for the server to process your request. APIs are implemented differently to fulfill different needs. </p>
+
+<p>The Postman Library API v2 allows you to add optional query parameters on requests to <code>GET /books</code> filter the books that come back in response. Let's try it out next!</p>
