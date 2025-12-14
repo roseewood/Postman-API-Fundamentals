@@ -494,4 +494,24 @@ These are just conventions - it all depends on how the API is coded. To know whi
 <p>The answer is always: read the API documentation!</p>
 <p>Sometimes, query parameters are optional and allow you to add filters or extra data to your responses. Sometimes, they are required in order for the server to process your request. APIs are implemented differently to fulfill different needs. </p>
 
-<p>The Postman Library API v2 allows you to add optional query parameters on requests to <code>GET /books</code> filter the books that come back in response. Let's try it out next!</p>
+<p>The Postman Library API v2 allows you to add optional query parameters on requests to <code>GET /books</code> filter the books that come back in response. Let's try it out next!</p><br>
+
+<h1 align="center">Task: Multiple query parameters</h1>
+<p>As a librarian, you'll need to help visitors find available books (not checked out).</p>
+
+<p>Let's add a second query parameter to <code>GET /books</code> only to list books where the <code>checkedOut</code> property is <code>false</code>. Refer to the documentation if you need a reminder.
+
+<h2>Add another query parameter.</h2>
+
+<ol>
+<li>In the same "get fiction books" request, in the <b>Params</b>  tab, add a second query parameter with a <b>key</b>  <code>checkedOut</code> and <b>value</b>  <code>false</code></li>
+
+<li><b>Save and Send</b> your request. </li>
+
+</ol>
+
+<p>You should get a <code>200 OK</code> response with an array of only fiction books that are not checked out or an empty array <code>[]</code> if there are no fiction books available.</p>
+
+<img src="" width="">
+
+<p>Remember to Save the request before moving to the next lesson.</p>
