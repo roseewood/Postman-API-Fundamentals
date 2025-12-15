@@ -568,3 +568,38 @@ These are just conventions - it all depends on how the API is coded. To know whi
 
 <p>Note that some API documentation uses <b>colon syntax</b> to represent a wildcard in the path like <code>/users/:username</code>, while some use curly braces like <code>/users/{username}</code>. They both mean the same thing: that part of the path is dynamic!</p><br>
 
+<h1 align="center">Task: Get a book by id</h1>
+<p>Someone keeps visiting the library daily, asking whether "Ficciones" by Jorge Luis Borges is available. </p>
+<p>When you fetched all the books in the library, you may have noticed that each book has a unique <code>id</code> value. This <code>id</code> can always be used to identify the book, even if its other properties are changed.</p>
+
+<p>Since this person keeps asking about "Ficciones", you've jotted down that the unique <code>id</code> of this book is <code>29cd820f-82f9-4b45-a7f4-0924111b5b89</code></p>
+<p>(Don't believe us? You can always search for "Ficciones" with the <code>search</code> query parameter: <code>GET /books?search=ficciones)</code>
+</p>
+
+<h2>Get a book by id</h2>
+
+<p>According to the API documentation, we can get a specific book by hitting the path <code>GET /books/:id</code>, where we replace <code>:id</code> with the book's id.</p>
+
+<ol>
+<li>Hover on your Postman Library API v2 Collection, click the three dots icon and select Add request. Name your new request "get book by id".
+</li>
+<li>Make sure the request method is set to GET, and paste in this endpoint as the request URL: {{baseUrl}}/books/:id 
+</li>
+<p>Postman automatically adds a "Path Variables" editor in the Params tab of the request for any path variables in the request URL prefixed with a colon :</p>
+<li>In the <b>Params</b> tab of the request, paste the <code>id</code> for "Ficciones" <code>(29cd820f-82f9-4b45-a7f4-0924111b5b89)</code> as the <b>value</b> for the path variable named <code>id</code>. Make sure not to add any whitespace around the id value.</li>
+<li>Save and Send your request </li>
+</ol>
+
+<p>You should get a <code>200 OK</code> response with a single JSON object that represents the "Ficciones" book. At the time of this example, the book is not checked out:
+ </p>
+
+ <h2>Debugging requests in the Postman Console</h2>
+ <p>You used Postman's path variable helper in the <b>Params</b> tab of the request to add a path variable nicknamed <code>:id</code> to the request URL in a human-friendly way. Postman replaces <code>:id</code> with the value you specify for <code>id</code> in the Path Variables editor.</p>
+ <p>You can always view the raw request sent to the API by opening the Postman Console in the lower left of Postman. All requests you make and their responses are logged in the Postman Console. Scroll to the bottom to expand the most recent request. </p>
+
+ <img src="Images/debuggingconsole.png" width="900px">
+
+ <p>You can see that Postman has inserted the book <code>id</code> as a path parameter in place of the <code>:id</code> placeholder when making the request. Cool!</p>
+ <p>If you run into any errors when making API calls, always check the Postman Console and ensure the raw request was sent as expected.<i> A common error is adding accidental white space in your query or path parameter values.</i></p>
+
+
