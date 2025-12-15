@@ -543,14 +543,14 @@ These are just conventions - it all depends on how the API is coded. To know whi
 <tr>
 <th>Path Variable</th>
 <th>Query parameters</th>
-<tr>
+</tr>
 <tr>
 <td>ex: <code>/books/abc123</code></td>
 <td>ex: <code>/books?search=borges&checkedOut=false</code></td>
 </tr>
 <tr>
 <td>Located directly after a slash in the path. It can be anywhere on the path</td>
-<td>Located only at the end of a path, right after a question mark ?<td>
+<td>Located only at the end of a path, right after a question mark ?</td>
 </tr>
 <tr>
 <td>Accepts dynamic values</td>
