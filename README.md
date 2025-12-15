@@ -600,6 +600,24 @@ These are just conventions - it all depends on how the API is coded. To know whi
  <img src="Images/debuggingconsole.png" width="900px">
 
  <p>You can see that Postman has inserted the book <code>id</code> as a path parameter in place of the <code>:id</code> placeholder when making the request. Cool!</p>
- <p>If you run into any errors when making API calls, always check the Postman Console and ensure the raw request was sent as expected.<i> A common error is adding accidental white space in your query or path parameter values.</i></p>
+ <p>If you run into any errors when making API calls, always check the Postman Console and ensure the raw request was sent as expected.<i> A common error is adding accidental white space in your query or path parameter values.</i></p><br>
+
+ <div align="center">
+<h1>Sending data with POST<h1>
+</div>
+
+<h1 align="center">Task: Add a book</h1>
+
+<p>A new bestseller book arrived! As a librarian, you wish to add that book to the library.</p>
+
+<p>In this lesson, we will learn how to add a book via POST request with a JSON Body to submit book data to our Postman Library API database. The endpoint for adding a book is documented here.</p>
+
+<h3>But what is the Body?</h3>
+
+<p>You will need to send body data with requests whenever you need to add or update structured data. For example, if you're sending a request to add a new customer to a database, you might include the customer details in JSON data format. Typically, you will use body data with <code>PUT</code>, <code>POST</code>, and <code>PATCH</code> requests.</p>
+
+<p>The <b>Body</b> tab in Postman enables you to specify the data you need to send with a request. You can send different types of body data to suit your API.</p>
+
+
 
 
