@@ -517,3 +517,54 @@ These are just conventions - it all depends on how the API is coded. To know whi
 <p>Remember to Save the request before moving to the next lesson.</p>
 <br>
 
+<h1 align="center">Path Variable</h1>
+
+<p>Another way of passing request data to an API is via <b>path variables</b> (a.k.a. "path parameters"). A path variable is a dynamic section of a path and is often used for IDs and entity names such as usernames. </p>
+
+<h2>Path Vriable Syntax</h2>
+<p>The path variable comes immediately after a slash in the path. For example, the GitHub API allows you to search for GitHub users by providing a username in the path in place of <code>{username}</code> below: </p>
+<p><code>GET https://api.github.com/users/{username}</code></p>
+
+<p>Making this API call with a value for <code>{username}</code> will fetch data about that user:</p>
+<p><code>GET https://api.github.com/users/postmanlabs</code></p>
+
+<p>You can have multiple path variables in a single request, such as this endpoint for getting a user's GitHub code repository:</p>
+<p><code>GET https://api.github.com/repos/{owner}/{repoName}</code></p>
+
+<p>For example, to get information about the <code>newman</code> code repository from <code>postmanlabs:</code></p>
+<p><code>GET https://api.github.com/repos/postmanlabs/newman</code></p>
+<p></p>
+
+<h2>Path vs. query parameters</h2>
+
+<p>At first, it is easy to confuse these two parameter types. Let's compare them side by side. </p>
+
+<table>
+<tr>
+<th>Path Variable</th>
+<th>Query parameters</th>
+<tr>
+<tr>
+<td>ex: <code>/books/abc123</code></td>
+<td>ex: <code>/books?search=borges&checkedOut=false</code></td>
+</tr>
+<tr>
+<td>Located directly after a slash in the path. It can be anywhere on the path</td>
+<td>Located only at the end of a path, right after a question mark ?<td>
+</tr>
+<tr>
+<td>Accepts dynamic values</td>
+<td>Accepts defined query keys with potentially dynamic values.</td>
+</tr>
+<tr>
+<td>* Often used for IDs or entity names</td>
+<td>* Often used for options and filters</td>
+</tr>
+</table>
+<p>* These are just conventions! Some APIs might ask you to pass an ID or username in a query parameter like this: <code>/users?username=getpostman</code></p>
+
+<h2>When to use path variable?</h2>
+<p><b>Always read the API documentation!</b> If a path parameter is required, the documentation will mention this.</p>
+
+<p>Note that some API documentation uses <b>colon syntax</b> to represent a wildcard in the path like <code>/users/:username</code>, while some use curly braces like <code>/users/{username}</code>. They both mean the same thing: that part of the path is dynamic!</p><br>
+
