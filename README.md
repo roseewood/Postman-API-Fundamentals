@@ -512,6 +512,8 @@ These are just conventions - it all depends on how the API is coded. To know whi
 
 <p>You should get a <code>200 OK</code> response with an array of only fiction books that are not checked out or an empty array <code>[]</code> if there are no fiction books available.</p>
 
-<img src="" width="">
+<img src="Images/secondqueryparameter.png" width="700px">
 
 <p>Remember to Save the request before moving to the next lesson.</p>
+<br>
+
