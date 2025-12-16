@@ -618,6 +618,38 @@ These are just conventions - it all depends on how the API is coded. To know whi
 
 <p>The <b>Body</b> tab in Postman enables you to specify the data you need to send with a request. You can send different types of body data to suit your API.</p>
 
+<p>You can use <b>raw</b> body data to send anything you can enter as text. Use the raw tab, and the type dropdown list to indicate the format of your data (<b>Text, JavaScript, JSON, HTML, or XML</b>), and Postman will enable syntax-highlighting and appending the relevant headers to your request.</p>
+
+<h2>Make a POST request</h2>
+
+<ol>
+<li> Hover over your <b>Postman Library API v2 Collection</b>, click the three dots icon and select <b>Add request</b>. Name your new request <b>"add book"</b> </li><br>
+<li>Set the request method to <code>POST</code> and the request URL to <br>
+<code>{{baseUrl}}/books</code></li><br>
+<li> This endpoint requires adding a body to our request to send a payload. Our payload will be a JSON object containing the information about the book we are adding.</li><br>
+<p>Click the <b>Body</b> tab of the request and select that data type <code>raw > JSON</code></p>
+<li>Think of a book you love or have read recently.</li><br>
 
 
+<p>Inside the Body editor, add a JSON object with details about the new book's title, author, genre and yearPublished.</p>
 
+<p>You can copy this object and replace the values with details about your book!</p>
+
+<pre>
+{
+  "title": "To Kill a Mockingbird",
+  "author": "Harper Lee",
+  "genre": "fiction",
+  "yearPublished": 1960
+}
+
+</pre>
+
+ <li>Save and Send your request.</li>
+
+ </ol>
+
+ <h3>😱 Uh-oh!</h3>
+
+ <p>The response from the server came back with a status <code>401 Unauthorized</code>. Remember that 400-level errors are client errors, meaning we made a mistake in our request. </p>
+ <p>The body of the response has a message explaining we need to add an <code>api-key</code> to the <code>headers</code> of the request.</p>
