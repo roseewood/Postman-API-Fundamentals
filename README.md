@@ -652,4 +652,7 @@ These are just conventions - it all depends on how the API is coded. To know whi
  <h3>😱 Uh-oh!</h3>
 
  <p>The response from the server came back with a status <code>401 Unauthorized</code>. Remember that 400-level errors are client errors, meaning we made a mistake in our request. </p>
- <p>The body of the response has a message explaining we need to add an <code>api-key</code> to the <code>headers</code> of the request.</p>
+ <p>The body of the response has a message explaining we need to add an <code>api-key</code> to the <code>headers</code> of the request.</p><br>
+
+ <h1 align="center">Task: Add an authorization header</h1>
+ <p>Some APIs require Authorization (aka Auth) for certain endpoints in order to permit a request.</p>
