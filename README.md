@@ -724,4 +724,26 @@ These are just conventions - it all depends on how the API is coded. To know whi
 
 <p>You can send the "get books by id" request again to see your new book with the new id</p><br>
 
-<h1 align="center"></h1>
+<h1 align="center">Introduction to Variables and Scripting</h1>
+
+<h1 align="center">Variables in Postman (Continued)</h1>
+
+<p>Previously in the "Request Parameters" section of this course, we saw how using a variable saved us time and helped reduce redundant copy-paste of the request URL using the double curly brace syntax like this: <code>{{variableName}}</code>.</p>
+
+<p>Remember, Postman allows you to save values as variables so that you can: </p>
+
+<ol>
+<li>Reuse values to keep your work DRY (Don’t Repeat Yourself)</li><br>
+<li>Hide sensitive values like API keys from being shared publicly</li>
+</ol>
+
+<p>In this section, we will learn more about variables and introduce better practices that enable us to make dynamic requests. </p>
+
+<h2>Variable scopes</h2>
+
+<p> You can set variables that live at various scopes. Postman will resolve to the value at the nearest and narrowest scope.</p>
+<p>From broadest to narrowest, these scopes are <b>global</b>, <b>collection</b>, <b>environment</b>, <b>data</b>, and <b>local</b>.</p>
+
+> If a variable with the same name is declared in two different scopes, the value stored in the variable with narrowest scope will be used. For example, if there is a global variable named <b>username</b> and a local variable named <b>username</b>, the local value will be used when the request runs.
+
+<p>We will work with <b>collection variables</b> today, which live at the collection level and can be accessed anywhere inside the collection.</p>
