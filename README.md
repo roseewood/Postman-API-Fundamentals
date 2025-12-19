@@ -693,3 +693,35 @@ These are just conventions - it all depends on how the API is coded. To know whi
 
  <h2>(optional) View your new book</h2>
  <p>You can now return to your "get books by id" request, and in the path parameter id replace it with the value of the id you received in the body of the book you added.</p>
+
+ <h1 align="center">Task: Use Postman Auth instead!</h1>
+ <p>Postman has an Auth helper that makes authorizing requests even easier!</p>
+
+ <h2>Delete the <code>api-key</code> header</h2>
+ <p>Before we use the Postman Auth helper, let's remove the hard-coded header we just added on the "add a book" request.</p>
+
+ <p>Hover over the <code>api-key</code> header in the <b>Headers</b> tab and click the "x" icon at the right to <b>delete the header</b>. <b>Save</b> your request.</p>
+
+ <h2>Add Auth to the Collection</h2>
+<p>The Postman Auth helper can help you add authorization at the request, folder or collection level. Let's add the api-key to our entire collection so that all requests will send the key. </p>
+
+<ol>
+<li>Click on your collection "Postman Library API v2" and select the Authorization (or Auth) tab</li><br>
+<li>Select API Key as the auth Type</li><br>
+<li>Enter the API Key details in the fields below. Key: api-key, Value: postmanrulz, Add to: Header</li><br>
+<li>ave the changes to your collection by clicking the floppy disk icon in the upper right (important!)</li><br>
+</ol>
+
+<p>All requests inside this collection that use the auth method "Inherit from parent" will have this header attached, and therefore be authorized.</p>
+
+<h2>Add a new book</h2>
+
+<ol>
+<li>Go back to your "add a book" request and add another book by changing the body in the Body tab</li><br>
+<li>Ensure the Auth method in the Authorization tab of your request is set to "Inherit from parent" to use the API Key we set at the collection level. This is the default behavior for requests.</li><br>
+<li>Save your request and hit Send!</li><br>
+</ol>
+
+<p>You can send the "get books by id" request again to see your new book with the new id</p><br>
+
+<h1 align="center"></h1>
