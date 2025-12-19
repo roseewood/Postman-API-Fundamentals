@@ -656,3 +656,40 @@ These are just conventions - it all depends on how the API is coded. To know whi
 
  <h1 align="center">Task: Add an authorization header</h1>
  <p>Some APIs require Authorization (aka Auth) for certain endpoints in order to permit a request.</p>
+
+ <h2>Authorization</h2>
+ <p>Think about why you might not want an API to have completely open endpoints that anyone can access publicly. It would allow unauthorized people to access data they shouldn't see, or allow bots to flood an API with thousands of calls per second and shut it down. </p>
+
+ <p>There are multiple methods for authorizing a request. Some examples are <b>Basic Auth</b> (username and password), <b>OAuth</b> (delegated authorization), and <b>API Keys</b> (secret strings registered to a developer from an API portal).</p>
+
+ <h2>Getting an API Key</h2>
+ <p>APIs that use API Key auth usually allow developers to sign up in a developer portal, where they will receive a random API Key that can be used to authorize their requests to the API. The API Key allows the API to track who is making calls and how often. </p>
+
+ <p>The Postman Library API v2 uses very light protection and does not require you to register for an API Key. You simply have to know it:</p>
+
+ <p>Header name: <code>api-key</code></p>
+ <p>Header value: <code>postmanrulz</code></p>
+
+ <p>As the documentation shows, the Postman Library API v2 requires adding this header to any requests for adding, updating and deleting books, since these operations change data in the database instead of simply reading them.</p>
+
+ <h2>Headers</h2>
+ <p>Headers are how we can add metadata about our requests, such as authorization information or specify the data type we want to receive in a response. This is different than the actual payload data we send in the body of a request, such as our new book information.</p>
+
+ <p>You can think of headers like the outside of an envelope when you send a letter. The envelope has information about delivering the letter, like proof that you've paid for postage. The actual data "payload" is the letter inside the envelope.</p>
+ <img src="Images/Postman on cycle.png" width="300px"><br>
+
+ <h2>Add the API Key to the request header</h2>
+ <ol>
+ <li>On your "<b>add a book</b>" request, click the <b>Headers</b> tab</li><br>
+ <li>In the Headers helper table, add the <b>key</b> <code>api-key</code> with a <b>value</b> of <code>postmanrulz</code></li><br>
+ <li>Save and Send your request. </li><br>
+ </ol>
+
+ <h2>🚀 Success!</h2>
+
+ <p>Your book was added! Now that your request is properly authorized in the header, you should get a <b>201 Created</b> response with a response body that is an object representing your newly added book!</p>
+
+ <p>Your new book has been assigned a random, unique <code>id</code>, and has extra information now, such as it's <code>checkedOut</code> status and when it was added to the library (<code>createdAt</code>)</p>
+
+ <h2>(optional) View your new book</h2>
+ <p>You can now return to your "get books by id" request, and in the path parameter id replace it with the value of the id you received in the body of the book you added.</p>
