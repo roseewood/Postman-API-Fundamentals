@@ -778,3 +778,50 @@ Postman has a helper object named <code>pm</code> that gives you access to data 
 <p>In addition to getting variables, you can also set them with <code> pm.collectionVariables.set("variableName", "variableValue")</code> like this:</p>
 
 <p><code>pm.collectionVariables.set(“myVar”, “foo”)</code></p>
+
+<h1 align="center">Task: Your first script</h1>
+
+<h2>Logging data </h2>
+
+<p>In JavaScript, you can print data for a value to the console using this syntax:</p>
+
+<pre>
+console.log("Hello world!")
+// => Hello world!
+</pre>
+
+
+<h2>Comments</h2>
+<p>In JavaScript you can add comments to your code. Comments are skipped by the interpreter, so you can use them to explain things in your code if you like.</p>
+
+<pre>
+// Single line comments start with two slashes. I am not code!
+
+/* You can write multi-line comments by 
+opening and closing with slash and asterisk. 
+I am not code!
+*/
+</pre>
+
+<h2>Add a script to your request</h2>
+
+<ol>
+<li>In your "add a book" request, change the book data in your Body to a new book you like.</li><br>
+<li>From the Scripts tab of your request, open the Post-res tab (short for Post-response)</li><br>
+<li>Inside the Script editor, add this JavaScript code to log the JSON response from the API:</li><br>
+<pre>
+console.log(pm.response.json())
+</pre>
+
+<p>1. Save your request</p>
+<p>2. Send your request. This will trigger the script in the Post-response script tab to run after the response comes back from the API</p>
+<p>3. Open the Postman Console in the lower left of the window.</p>
+
+<li> Scroll to the bottom of the logs in the console. You will see your most recent request POST https://library-api.postmanlabs.com/books</li><br>
+</ol>
+
+<img src="Images/script.png" width="1000px">
+
+<p>The response data from the API is logged in the console because of the code in our Scripts tab! You can expand the data by clicking on the small arrow to the left</p>
+
+<img src="Images/consoleScript.png" width="800px">
