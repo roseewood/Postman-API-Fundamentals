@@ -923,4 +923,30 @@ pm.collectionVariables.set("id", id)
 
 <h2>Your book is updated!</h2>
 
-<p>Now, if you return to your "get book by id" request, update the id path variable value to <code>{{id}}</code> <b>Save</b> and <b>Send</b>, you will see the same updated data!</p>
+<p>Now, if you return to your "get book by id" request, update the id path variable value to <code>{{id}}</code> <b>Save</b> and <b>Send</b>, you will see the same updated data!</p><br>
+
+<h1 align="center">Task: Delete your book</h1>
+<p>Oops! The person that checked out your book accidentally lost it... you will need to delete it from the library database.</p>
+
+<p>The API documentation shows how we can delete books with the <code>DELETE /books/:id path</code></p>
+
+<h2>Make a new request</h2>
+
+<p>The <code>DELETE</code> request has a similar format to the <code>PATCH</code> request, so let's copy the <code>PATCH</code> request to make our new request.</p>
+
+<ol>
+<li>Hover on your Postman Library API v2 collection, click the three dots, and select "Add request", name your new request "delete a book"</li><br>
+<li>Set the request method of the "delete a book" request to DELETE </li><br>
+<li>Set the request URL to {{baseUrl}}/books/:id</li><br>
+<li>In the Params tab of the request, make sure the path variable id is set to {{id}}</li><br>
+<li>Save and Send your request</li><br>
+</ol>
+
+<p>You should get a 204 No Content response from the API. This means the server successfully deleted the book, and won't send any response body back. Remember: if you ever wonder what a status code means, you can hover on it in Postman for an explanation!</p>
+
+<h2>Is it really gone?</h2>
+
+<p>Without changing anything, try sending your request again.</p>
+<p>Since you are sending a request to delete a book with an id that no longer exists, you get a 404 error! </p>
+
+<img src="Images/deletingBook.png" width="500px">
