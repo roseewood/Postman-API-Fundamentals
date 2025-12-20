@@ -825,3 +825,61 @@ console.log(pm.response.json())
 <p>The response data from the API is logged in the console because of the code in our Scripts tab! You can expand the data by clicking on the small arrow to the left</p>
 
 <img src="Images/consoleScript.png" width="800px">
+
+<h1>Task: Grab the new book id</h1>
+<p>Combining the power of variables and scripting gives you superpowers! Let's explore how you can automatically set a value for a variable via scripting.</p>
+<p>Saving a value as a variable allows you to use it in other requests. Using a <b>Post-response</b> script, let's grab the <code>id</code> of a newly added book and save it so we can use it in future requests.</p>
+
+<h2>Setting and getting collection variables</h2>
+<p>The <code>pm</code> object allows you to set and get collection variables.</p>
+
+<p>To <b>set</b> a collection variable, use the <code>.set()</code> method with two parameters: the variable name and the variable value</p>
+
+<pre>
+pm.collectionVariables.set("variableName", value)
+</pre>
+
+<p>To <b>get</b> a collection variable use the <code>.get()</code> method and specify the name of the variable you want to retrieve:</p>
+
+<pre>
+pm.collectionVariables.get("variableName")
+</pre>
+
+<h1>Local variables</h2>
+
+<p>We can also store local variables inside our scripts using JavaScript. </p>
+
+<p>There are two ways to define a variable in JavaScript: using the <code>const</code> or <code>let</code> keywords. <code>const</code> is for variables that won't change value, whereas <code>let</code> allows you to reassign the value later.</p>
+
+<h2>Set the new book <code>id</code> as a variable</h2>
+
+<p>1. In the <b>Body</b> tab of the <b>"add a book"</b> request, <b>change the book's details to add a new book!</b></p>
+
+<p>2. In the <b>Post-response</b> tab in <b>Scripts</b> of the "add a book" request, replace the console.log() statement with this code:</p>
+
+<pre>
+// save the "id" value from the response to a variable named "id"
+const id = pm.response.json().id
+// save the id as a collection variable named "id"
+pm.collectionVariables.set("id", id)
+</pre>
+
+
+<p>The comments above that start with <code>//</code> help explain what the code is doing, and are ignored when we run the script. </p>
+
+> Note: If there is no Collection variable named "id" Postman will create a new variable named id and assign the value.
+
+<img src="Images/newbookidasvariable.png" width="800px">
+
+<p>3. <b>Save and send</b> your request.</p>
+
+<p>When the <code>201</code> the response comes back from the API with your newly created book, and the test script will run and save the book's <code>id</code> as a collection variable automatically.</p>
+
+<p>View your collection variables by clicking on your Postman Library API v2 collection, then the Variables tab.</p>
+
+
+<p>The <code>id</code> variable has been automatically assigned the id of your new book as its Current Value!</p>
+
+<img src="Images/newbookidasvariable2.png" width="800px">
+
+<p>You can now use <code>{{id}}</code> anywhere in your collection to access this value! This will come in handy for our next request.</p>
