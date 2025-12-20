@@ -883,3 +883,44 @@ pm.collectionVariables.set("id", id)
 <img src="Images/newbookidasvariable2.png" width="800px">
 
 <p>You can now use <code>{{id}}</code> anywhere in your collection to access this value! This will come in handy for our next request.</p>
+
+<h1 align="center">PATCH and DELETE</h1>
+<h1 align="center">Task: Checkout your book</h1>
+<p>Someone wants to check out the book you just added!</p>
+<p>As a librarian, you will update the library database via the API to mark the book's <code>checkedOut</code> status from <code>false</code> to <code>true.</code></p>
+
+<p>The API documentation shows we can <b>update a book by id</b> by making a request (authorized with the API Key) with the updated information to:</p>
+
+<p><code>PATCH https://library-api.postmanlabs.com/books/:id</code></p>
+
+<h2>Make a request to update the book</h2>
+
+<ol>
+<li>Hover on your <b>Postman Library API v2</b> collection, click the three dots, and select <b>Add request</b>. Name your new request <b>"checkout a book"</b>
+</li></br>
+<li>Set the request method to <b>PATCH</b></li></br>
+<li>Set the request URL to <code>{{baseUrl}}/books/:id</code> </li></br>
+<li>Set the value of the path variable id to <code>{{id}}</code>.</li></br>
+
+<p>This will use the value of our collection variable named <code>id</code> that was set in the <b>Test</b> script of the"add a book" request. You can see the value by hovering on your <code>id</code> variable.</p>
+<img src="Images/id.png" width="800px">
+
+<li>Add a <b>raw JSON</b> body in the <b>Body</b> tab to update the <code>checkedOut</code> property to <code>true</code>: </li></br>
+
+<pre>
+{ 
+  "checkedOut": true 
+}
+</pre>
+<li><b>Save and Send</b> your request</li></br>
+</ol>
+
+> Note: This request requires <b>Authorization</b>, which is automatically added as we added the collection level auth. The request is set to "Inherit from parent", this will use the API Key set at the collection level on our PATCH request. 
+
+<p>You should get a <code>200 OK</code> response that shows the updated data about your book. Notice how <code>checkedOut</code> is now <code>true</code></p>
+
+<img src="Images/checkedOutTrue.png" width="900px">
+
+<h2>Your book is updated!</h2>
+
+<p>Now, if you return to your "get book by id" request, update the id path variable value to <code>{{id}}</code> <b>Save</b> and <b>Send</b>, you will see the same updated data!</p>
