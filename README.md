@@ -747,3 +747,34 @@ These are just conventions - it all depends on how the API is coded. To know whi
 > If a variable with the same name is declared in two different scopes, the value stored in the variable with narrowest scope will be used. For example, if there is a global variable named <b>username</b> and a local variable named <b>username</b>, the local value will be used when the request runs.
 
 <p>We will work with <b>collection variables</b> today, which live at the collection level and can be accessed anywhere inside the collection.</p>
+<br>
+
+<h1 align="center">Setting variables programmatically</h1>
+
+<h2>Scripting in Postman</h2>
+<p>Postman allows you to add automation and dynamic behaviors to your collections with scripting.</p>
+
+<p>Postman will automatically execute any provided scripts during two events in the request flow:</p>
+
+<ol>
+<li>Immediately before a request is sent: pre-request script (<b>Pre-request Script</b> of Scripts tab).</li><br>
+<li>Immediately after a response comes back: post-response script (<b>Post-response</b> of Scripts tab).</li><br>
+</ol>
+
+<p>In this lesson, we will focus on writing scripts in the Post-response tab, which are executed when a response comes back from an API.</p>
+
+<h2>The <code>pm</code> object</h2>
+
+Postman has a helper object named <code>pm</code> that gives you access to data about your Postman environment, requests, responses, variables and testing utilities. 
+
+<p>For example, you can access the JSON response body from an API with:</p>
+
+<p><code>pm.response.json()</code></p>
+
+<p>You can also programmatically get collection variables like the value of <code>baseUrl</code> with:</p>
+
+<p><code>pm.collectionVariables.get(“baseUrl”)</code></p>
+
+<p>In addition to getting variables, you can also set them with <code> pm.collectionVariables.set("variableName", "variableValue")</code> like this:</p>
+
+<p><code>pm.collectionVariables.set(“myVar”, “foo”)</code></p>
